@@ -1,0 +1,21 @@
+<head>
+    <title>Adaptive Streaming in HTML5</title>
+    <!-- DASH-AVC/265 reference implementation -->
+    <script src="http://cdn.dashjs.org/latest/dash.all.min.js"></script>
+    <style>
+      video {
+        width: 80%;
+        height: 80%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Adaptive Streaming with HTML5</h1>
+    <div>
+        <video data-dashjs-player autoplay="true" loop="true" controls="true">
+	 <source src="manifestffmpeg.mpd" type="application/dash+xml">
+	</video>
+    </div>
+  </body>
+</html>
